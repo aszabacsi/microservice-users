@@ -1,0 +1,37 @@
+{
+  "name": "user-service",
+  "version": "0.0.1",
+  "description": "Template for Node projects written in Typescript",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "proxy": "nginx restart -c nginx.conf",
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "build:watch": "watch:ts",
+    "watch:ts": "tsc -w",
+    "test": "jest",
+    "start:json": "json-server db.json --port 4000"
+  },
+  "author": "Akos Szabacsi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/amqplib": "^0.5.7",
+    "@types/jest": "^22.2.3",
+    "@types/mongodb": "^3.0.19",
+    "@types/node": "^9.6.11",
+    "@types/redis": "^2.8.6",
+    "dotenv": "^5.0.1",
+    "jest": "^22.4.4",
+    "redis": "^2.8.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.8.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "mongodb": "^3.0.10",
+    "node-redis": "^0.1.7",
+    "promisify": "0.0.3"
+  }
+}

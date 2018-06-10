@@ -1,0 +1,26 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "arrow-parens": false,
+    "quotemark": [
+        true,
+        "single",
+        "jsx-double"
+    ],
+    "semicolon": [
+        true,
+        "always"
+    ],
+    "interface-name": [
+        true,
+        "never-prefix"
+    ],
+    "ordered-imports": false,
+    "align": false,
+    "object-literal-sort-keys": false
+  }
+}
